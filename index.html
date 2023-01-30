@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SociOut-A Social Media Website</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <span>SociOut</span>
+            <div class="searchbar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators, inspiration and friends...">
+            </div>
+            <div class="login">
+                <label for="login" class="btn-red btn">Login</label>
+                <div class="profilecontainer">
+                    <div class="profilepicture">
+                        <img src="./assets/people/Elizabeth.jpg" alt="">
+                    </div>
+                    <h3>Elizabeth Olsen</h3>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="leftbar">
+                <a class="profile">
+                   <div class="profilepicture">
+                    <img src="./assets/post/Elizabeth/1.jpg" alt="">
+                   </div>
+                   <div class="info">
+                    <h4>Elizabeth Olsen</h4>
+                    <p class="text">You Know Who I'm</p>
+                    <div class="line"></div>
+                    <h5>Following</h5>
+                    <span>30</span>
+                    <div class="line"></div>
+                    <h5>Followers</h5>
+                    <span>400 M</span>
+                    <div class="line"></div>
+                    <button>Edit Profile</button>
+                   </div>
+                </a>
+                <div class="menubar">
+                    <a class="menuitems active">
+                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    </a>
+                    <a class="menuitems">
+                        <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                    </a>
+                    <a class="menuitems" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">6+</small></i></span><h3>Notifications</h3>
+                        <div class="notificationspopup">
+                            <div>
+                                <div class="profilepicture">
+                                    <img src="./assets/people/Hailee.jpg" alt="">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Hailee Steinfeld</b> accepted your friend request
+                                    <small class="text">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profilepicture">
+                                    <img src="./assets/people/Iswarya.jpg" alt="">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Iswarya Menon</b> commented on your post
+                                    <small class="text">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profilepicture">
+                                    <img src="./assets/people/May.jpg" alt="">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>May Calamawy</b> liked on your post
+                                    <small class="text">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profilepicture">
+                                    <img src="./assets/people/Raashi.jpg" alt="">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Raashi Khanna</b> commented on a post you are tagged in
+                                    <small class="text">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profilepicture">
+                                    <img src="./assets/people/Shahid.jpg" alt="">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Shahid Kapoor</b> accepted your friend request
+                                    <small class="text">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profilepicture">
+                                    <img src="./assets/people/Keerthy.jpg" alt="">
+                                </div>
+                                <div class="notificationbody">
+                                    <b>Keerthy Suresh</b> commented on a post you are tagged in
+                                    <small class="text">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menuitems" id="message-notifications">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">10</small></i></span><h3>Messages</h3>
+                    </a>
+                    <a class="menuitems">
+                        <span><i class="uil uil-film"></i></span><h3>Reels</h3>
+                    </a>
+                    <a class="menuitems">
+                        <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
+                    </a>
+                    <a class="menuitems">
+                        <span><i class="uil uil-bookmark-full"></i></span><h3>Bookmark</h3>
+                    </a>
+                    <a class="menuitems">
+                        <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="middlebar">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Elizabeth/3.jpg" alt="">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Keerthy/2.jpg" alt="">
+                        </div>
+                        <p class="name">Keerthy Suresh</p>
+                    </div>
+                    <div class="story">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Hailee/3.jpg" alt="">
+                        </div>
+                        <p class="name">Hailee Steinfeld</p>
+                    </div>
+                    <div class="story">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Raashi/5.jpg" alt="">
+                        </div>
+                        <p class="name">Raashi Khanna</p>
+                    </div>
+                    <div class="story">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Iswarya/2.jpg" alt="">
+                        </div>
+                        <p class="name">Iswarya Menon</p>
+                    </div>
+                    <div class="story">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Shahid/2.jpg" alt="">
+                        </div>
+                        <p class="name">Shahid Kapoor</p>
+                    </div>
+                </div>
+                <div class="createpost">
+                    <div class="profilepicture">
+                        <img src="./assets/post/Elizabeth/9.jpg" alt="">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Elizabeth?">
+                    <input type="Submit" value="Post" class="btn btnprimary">
+                </div>
+                <div class="feeds">
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profilepicture">
+                                    <img src="./assets/post/Prabhas/3.jpg" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h3>Prabhas</h3>
+                                    <small class="text"><i class="uil uil-map-marker-alt"></i> Visakhapatnam</small>
+                                    <small class="text"><i class="uil uil-clock-five"></i>15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="menu"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <div class="desc">
+                            <h5>A little posing and the necessary hair flick</h5>
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/post/Prabhas/1.webp" alt="">
+                        </div>
+                        <div class="responsebutton">
+                            <div class="response">
+                                <span><i class="uil uil-heart-alt"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="likeby">
+                            <span><img src="./assets/post/Jason/3.jpg" alt=""></span>
+                            <span><img src="./assets/post/Elizabeth/2.jpg" alt=""></span>
+                            <span><img src="./assets/post/Iswarya/7.jpg" alt=""></span>
+                            <p>Liked by <b>Jason Momoa</b> and <b>4,000 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Prabhas</b> Lorem ipsum dolor sit amet. <span class="hashtag"> #lifestyle</span></p>
+                        </div>
+                        <div class="text">View all 400 comments</div>
+                    </div>
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profilepicture">
+                                    <img src="./assets/post/Iswarya/3.jpg" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h3>Iswarya Menon</h3>
+                                    <small class="text"><i class="uil uil-map-marker-alt"></i> Visakhapatnam</small>
+                                    <small class="text"><i class="uil uil-clock-five"></i>15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="menu"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <div class="desc">
+                            <h5>A little posing and the necessary hair flick</h5>
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/post/Iswarya/4.jpg" alt="">
+                        </div>
+                        <div class="responsebutton">
+                            <div class="response">
+                                <span><i class="uil uil-heart-alt"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="likeby">
+                            <span><img src="./assets/post/Jason/3.jpg" alt=""></span>
+                            <span><img src="./assets/post/Elizabeth/2.jpg" alt=""></span>
+                            <span><img src="./assets/post/Iswarya/7.jpg" alt=""></span>
+                            <p>Liked by <b>Jason Momoa</b> and <b>4,000 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Iswarya Menon</b> Lorem ipsum dolor sit amet. <span class="hashtag"> #lifestyle</span></p>
+                        </div>
+                        <div class="text">View all 400 comments</div>
+                    </div>
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profilepicture">
+                                    <img src="./assets/post/Raashi/2.jpg" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h3>Raashi Khanna</h3>
+                                    <small class="text"><i class="uil uil-map-marker-alt"></i> Visakhapatnam</small>
+                                    <small class="text"><i class="uil uil-clock-five"></i>15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="menu"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <div class="desc">
+                            <h5>A little posing and the necessary hair flick</h5>
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/post/Raashi/1.jpg" alt="">
+                        </div>
+                        <div class="responsebutton">
+                            <div class="response">
+                                <span><i class="uil uil-heart-alt"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="likeby">
+                            <span><img src="./assets/post/Jason/3.jpg" alt=""></span>
+                            <span><img src="./assets/post/Elizabeth/2.jpg" alt=""></span>
+                            <span><img src="./assets/post/Iswarya/7.jpg" alt=""></span>
+                            <p>Liked by <b>Jason Momoa</b> and <b>4,000 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Raashi Khanna</b> Lorem ipsum dolor sit amet. <span class="hashtag"> #lifestyle</span></p>
+                        </div>
+                        <div class="text">View all 400 comments</div>
+                    </div>
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profilepicture">
+                                    <img src="./assets//post/Shahid/5.jpg" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h3>Shahid Kapoor</h3>
+                                    <small class="text"><i class="uil uil-map-marker-alt"></i> Visakhapatnam</small>
+                                    <small class="text"><i class="uil uil-clock-five"></i>15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="menu"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <div class="desc">
+                            <h5>A little posing and the necessary hair flick</h5>
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/post/Shahid/4.jpg" alt="">
+                        </div>
+                        <div class="responsebutton">
+                            <div class="response">
+                                <span><i class="uil uil-heart-alt"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="likeby">
+                            <span><img src="./assets/post/Jason/3.jpg" alt=""></span>
+                            <span><img src="./assets/post/Elizabeth/2.jpg" alt=""></span>
+                            <span><img src="./assets/post/Iswarya/7.jpg" alt=""></span>
+                            <p>Liked by <b>Jason Momoa</b> and <b>4,000 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Shahid Kapoor</b> Lorem ipsum dolor sit amet. <span class="hashtag"> #lifestyle</span></p>
+                        </div>
+                        <div class="text">View all 400 comments</div>
+                    </div>
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profilepicture">
+                                    <img src="./assets/post/Hailee/4.jpg" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h3>Hailee Steinfeld</h3>
+                                    <small class="text"><i class="uil uil-map-marker-alt"></i> Visakhapatnam</small>
+                                    <small class="text"><i class="uil uil-clock-five"></i>15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="menu"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <div class="desc">
+                            <h5>A little posing and the necessary hair flick</h5>
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/post/Hailee/1.jpg" alt="">
+                        </div>
+                        <div class="responsebutton">
+                            <div class="response">
+                                <span><i class="uil uil-heart-alt"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="likeby">
+                            <span><img src="./assets/post/Jason/3.jpg" alt=""></span>
+                            <span><img src="./assets/post/Elizabeth/2.jpg" alt=""></span>
+                            <span><img src="./assets/post/Iswarya/7.jpg" alt=""></span>
+                            <p>Liked by <b>Jason Momoa</b> and <b>4,000 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Prabhas</b> Lorem ipsum dolor sit amet. <span class="hashtag"> #lifestyle</span></p>
+                        </div>
+                        <div class="text">View all 400 comments</div>
+                    </div>
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profilepicture">
+                                    <img src="./assets/post/Jason/3.jpg" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h3>Jason Momoa</h3>
+                                    <small class="text"><i class="uil uil-map-marker-alt"></i> Visakhapatnam</small>
+                                    <small class="text"><i class="uil uil-clock-five"></i>15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="menu"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <div class="desc">
+                            <h5>A little posing and the necessary hair flick</h5>
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/post/Jason/4.jpg" alt="">
+                        </div>
+                        <div class="responsebutton">
+                            <div class="response">
+                                <span><i class="uil uil-heart-alt"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="likeby">
+                            <span><img src="./assets/post/Prabhas/4.webp" alt=""></span>
+                            <span><img src="./assets/post/Elizabeth/2.jpg" alt=""></span>
+                            <span><img src="./assets/post/Iswarya/7.jpg" alt=""></span>
+                            <p>Liked by <b>Prabhas</b> and <b>4,000 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Jason Momoa</b> Lorem ipsum dolor sit amet. <span class="hashtag"> #lifestyle</span></p>
+                        </div>
+                        <div class="text">View all 400 comments</div>
+                    </div>
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profilepicture">
+                                    <img src="./assets/post/Elizabeth/7.jpg" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h3>Elizabeth Olsen</h3>
+                                    <small class="text"><i class="uil uil-map-marker-alt"></i> Visakhapatnam</small>
+                                    <small class="text"><i class="uil uil-clock-five"></i>15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="menu"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <div class="desc">
+                            <h5>A little posing and the necessary hair flick</h5>
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/post/Elizabeth/5.jpg" alt="">
+                        </div>
+                        <div class="responsebutton">
+                            <div class="response">
+                                <span><i class="uil uil-heart-alt"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="likeby">
+                            <span><img src="./assets/post/Prabhas/4.webp" alt=""></span>
+                            <span><img src="./assets/post/Elizabeth/2.jpg" alt=""></span>
+                            <span><img src="./assets/post/Iswarya/7.jpg" alt=""></span>
+                            <p>Liked by <b>Prabhas</b> and <b>4,000 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Elizabeth Olsen</b> Lorem ipsum dolor sit amet. <span class="hashtag"> #lifestyle</span></p>
+                        </div>
+                        <div class="text">View all 400 comments</div>
+                    </div>
+                    <div class="post">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profilepicture">
+                                    <img src="./assets/post/Keerthy/4.jpg" alt="">
+                                </div>
+                                <div class="infor">
+                                    <h3>Keerthy Suresh</h3>
+                                    <small class="text"><i class="uil uil-map-marker-alt"></i> Visakhapatnam</small>
+                                    <small class="text"><i class="uil uil-clock-five"></i>15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="menu"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <div class="desc">
+                            <h5>A little posing and the necessary hair flick</h5>
+                        </div>
+                        <div class="photo">
+                            <img src="./assets/post/Keerthy/6.jpg" alt="">
+                        </div>
+                        <div class="responsebutton">
+                            <div class="response">
+                                <span><i class="uil uil-heart-alt"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="likeby">
+                            <span><img src="./assets/post/Jason/3.jpg" alt=""></span>
+                            <span><img src="./assets/post/Elizabeth/2.jpg" alt=""></span>
+                            <span><img src="./assets/post/Iswarya/7.jpg" alt=""></span>
+                            <p>Liked by <b>Jason Momoa</b> and <b>4,000 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Keerthy Suresh</b> Lorem ipsum dolor sit amet. <span class="hashtag"> #lifestyle</span></p>
+                        </div>
+                        <div class="text">View all 400 comments</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbar">
+                <div class="messages">
+                    <div class="heading">
+                        <h3>Messages</h3><i class="uil uil-edit"></i>
+                    </div>
+                    <div class="searchbar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search message...">
+                    </div>
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Hailee/2.jpg" alt="">
+                        </div>
+                        <div class="messagebody">
+                            <div class="user">
+                                <h4>Hailee Steinfeld</h4>
+                                <p>I'm Out of the house</p>
+                            </div>
+                            <div class="time">
+                                <span><small class="text">16/7/22</small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Iswarya/6.jpg" alt="">
+                        </div>
+                        <div class="messagebody">
+                            <div class="user">
+                                <h4>Iswarya Menon</h4>
+                                <p>Let meet up today?</p>
+                            </div>
+                            <div class="time">
+                                <span><small class="text">16/7/22</small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Jason/4.jpg" alt="">
+                        </div>
+                        <div class="messagebody">
+                            <div class="user">
+                                <h4>Jason Momoa</h4>
+                                <p>Awesome</p>
+                            </div>
+                            <div class="time">
+                                <span><small class="text">16/7/22</small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Keerthy/5.jpg" alt="">
+                        </div>
+                        <div class="messagebody">
+                            <div class="user">
+                                <h4>Keerthy Suresh</h4>
+                                <p>Nice</p>
+                            </div>
+                            <div class="time">
+                                <span><small class="text">16/7/22</small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Prabhas/4.webp" alt="">
+                        </div>
+                        <div class="messagebody">
+                            <div class="user">
+                                <h4>Prabhas</h4>
+                                <p>Okk</p>
+                            </div>
+                            <div class="time">
+                                <span><small class="text">16/7/22</small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profilepicture">
+                            <img src="./assets/post/Raashi/4.jpg" alt="">
+                            <div class="active"></div>
+                        </div>
+                        <div class="messagebody">
+                            <div class="user">
+                                <h4>Raashi Khanna</h4>
+                                <p>Tomorrow 4pm</p>
+                            </div>
+                            <div class="time">
+                                <span><small class="text">16/7/22</small></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="friendrequests">
+                    <h2>Requests</h2>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profilepicture">
+                                <img src="./assets/people/May.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>May Calamawy</h3>
+                                <p class="text">
+                                    10 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn btnprimary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profilepicture">
+                                <img src="./assets/post/Jason/7.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>May Calamawy</h3>
+                                <p class="text">
+                                    10 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn btnprimary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profilepicture">
+                                <img src="./assets/post/Prabhas/5.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>May Calamawy</h3>
+                                <p class="text">
+                                    10 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn btnprimary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profilepicture">
+                                <img src="./assets/post/Shahid/6.webp" alt="">
+                            </div>
+                            <div>
+                                <h3>May Calamawy</h3>
+                                <p class="text">
+                                    10 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="btn btnprimary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="./index.js"></script>
+</body>
+</html>
